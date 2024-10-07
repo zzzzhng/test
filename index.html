@@ -20,7 +20,6 @@
         nav {
             text-align: center;
             margin: 20px 0;
-            box-shadow: 0 0 10px rgba(255,255,255,0.3); /* 네비게이션 바에 그림자 추가 */
         }
         nav a {
             margin: 0 15px;
@@ -41,10 +40,11 @@
         }
         h2 {
             font-size: 3em; /* 글씨 크기 조정 */
-            overflow: hidden; /* 흐르는 효과를 위해 설정 */
+            overflow: visible; /* 잘리는 것 방지 */
             white-space: nowrap; /* 줄 바꿈 방지 */
             animation: flow 5s linear infinite; /* 애니메이션 적용 */
-            color: white;
+            color: white; /* 글자 색상 변경 */
+            padding: 0 20px; /* 좌우 여백 추가 */
         }
 
         /* 애니메이션 정의 */
